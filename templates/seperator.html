@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}James' Tools | Comma Seperator{% endblock %}
+{% block content %}
+<body>
+    <div class="contentmain">
+        <div class="background">
+            <h1>Seperate your words with a comma</h1>
+            <p>Make sure each word has a space inbetween before submitting</p>
+        </div>
+
+        <div class="background2">
+            <form action="" method="POST">
+                <input type="checkbox" name="comspace">
+                <label>Add space after each comma</label><br>
+                <input type="checkbox" name="speechmarks">
+                <label>Add speechmarks on each word</label><br>
+                <textarea class="commarsep" name="seperator" rows="10" cols="80"></textarea>
+                <br>
+                <input class="inputbutton" type="submit" value="Submit">
+                </form>
+
+            <p> {{ result }}</p>
+        </div>
+
+    </div>
+
+</body>
+
+{% endblock %}

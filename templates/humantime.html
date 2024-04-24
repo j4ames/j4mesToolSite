@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}James' Tools | Human Time{% endblock %}
+{% block content %}
+<body>
+
+    <div class="contentmain">
+        <div class="background">
+            <h1>Turn seconds into time you can read</h1>
+            <p>For example 3600 seconds = 1 hour</p>
+        </div>
+
+        <div class="background2">
+            <form action="" method="POST">
+                <input type="number" name="text" placeholder="Input seconds"
+                required>
+                <input class="inputbutton" type="submit">
+            </form>
+
+            <p style="color: red;">{{ error }}</p>
+            <p>{{ years }} {{ days }} {{ hours }} {{ minutes }} {{ workout_seconds }}</p>
+
+        </div>
+
+    </div>
+
+</body>
+{% endblock %}

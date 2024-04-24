@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}James' Tools | Guess The Number{% endblock %}
+{% block content %}
+<body>
+    <div class="contentmain">
+        <div class="background">
+            <h1>Number Game</h1>
+            <p>Player to guess closest to the robots number wins!</p>
+        </div>
+            <div class="background2">
+                <form action="" method="POST">
+                    <p>Player 1 enter your number</p>
+                    <input type="number" name="player1box" required>
+                    <p>Player 2 enter your number</p>
+                    <input type="number" name="player2box" required><br><br>
+                    <input class="inputbutton" type="submit" value="Play!">
+                </form>
+                <p> {{ result }} </p>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
